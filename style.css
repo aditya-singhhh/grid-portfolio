@@ -102,3 +102,23 @@ body{
     background: linear-gradient(to right, rgb(52, 5, 5), rgb(41, 15, 15));
     box-shadow: 0 0 4px rgb(145, 20, 20);
 }
+
+/*Media Queries*/
+
+@media  screen and (max-width : 770px) {
+    .container{
+        flex-direction: column;
+    }
+    .gallery{
+        width: 100%;
+        grid-auto-rows: 220px;
+        padding: 10px 10px 40px 10px;
+    }
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+    .left-text{
+        padding: 10px 10px;
+    }
+}
